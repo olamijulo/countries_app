@@ -77,7 +77,7 @@ class Datum {
         currentPresident: json["current_president"] == null ? null : CurrentPresident.fromJson(json["current_president"]),
         currency: json["currency"],
         phoneCode: json["phone_code"],
-        continent: continentValues.map[json["continent"]]!,
+        continent: continentValues.map[json["continent"]],
         description: json["description"],
         size: json["size"],
         independenceDate: json["independence_date"] == null ? null : DateTime.parse(json["independence_date"]),
