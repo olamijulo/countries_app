@@ -23,14 +23,20 @@ class Toast extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(title,
-                  style: TextStyle(color: Colors.white, fontSize: 16.0)),
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 14.0,
+                      fontWeight: FontWeight.w400)),
               const SizedBox(
                 height: 8,
               ),
               SizedBox(
-                width: 500.0,
+                width: 250.0,
                 child: Text(subTitle,
-                    style: TextStyle(color: Colors.white, fontSize: 14.0)),
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 12.0,
+                        fontWeight: FontWeight.w400)),
               ),
             ],
           ),

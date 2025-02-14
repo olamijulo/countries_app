@@ -186,7 +186,7 @@ class _FilterBottomSheetState extends ConsumerState<FilterBottomSheet> {
   }
 }
 
-class CheckBoxLabelSelection extends StatelessWidget {
+class CheckBoxLabelSelection extends ConsumerWidget {
   final String label;
   final bool value;
   final Function(bool?)? onChanged;
@@ -198,7 +198,9 @@ class CheckBoxLabelSelection extends StatelessWidget {
   });
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
+    final themeNotifierWatch = ref.watch(themeProvider);
+
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
@@ -209,7 +211,8 @@ class CheckBoxLabelSelection extends StatelessWidget {
         Checkbox.adaptive(
             shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(5.0)),
-            activeColor: AppColors.blue100,
+            activeColor:
+                themeNotifierWatch ? AppColors.grey100 : AppColors.blue100,
             value: value,
             onChanged: onChanged)
       ],
