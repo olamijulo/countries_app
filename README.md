@@ -1,16 +1,21 @@
 # countries_app
 
-A new Flutter project.
+This is an app that displays details about specific countries as shown on the app.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+To run this app you will need an API key from the [here](https://restfulcountries.com), without this key the app won't work as expected.
 
-A few resources to get you started if this is your first Flutter project:
+## Dependencies
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- dio
+- flutter_dotenv
+- flutter_riverpod
+- flutter_svg
+- get_it
+- riverpod
+- shared_preferences
+- shimmer
+- sticky_headers
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
