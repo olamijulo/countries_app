@@ -28,7 +28,7 @@ class Toast extends StatelessWidget {
                 height: 8,
               ),
               SizedBox(
-                width: 300.0,
+                width: 500.0,
                 child: Text(subTitle,
                     style: TextStyle(color: Colors.white, fontSize: 14.0)),
               ),
