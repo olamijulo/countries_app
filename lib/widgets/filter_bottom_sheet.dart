@@ -208,7 +208,7 @@ class CheckBoxLabelSelection extends ConsumerWidget {
           label,
           style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.w400),
         ),
-        Checkbox.adaptive(
+        Checkbox(
             shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(5.0)),
             activeColor:

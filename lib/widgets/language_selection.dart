@@ -30,7 +30,7 @@ class _LanguageSelectionState extends ConsumerState<LanguageSelection> {
           widget.value,
           style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.w400),
         ),
-        Radio.adaptive(
+        Radio(
             activeColor:
                 themeNotifierWatch ? AppColors.grey100 : AppColors.blue100,
             value: widget.value,

@@ -18,7 +18,7 @@ class _LanguagesModalBottomSheetState extends State<LanguagesModalBottomSheet> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: MediaQuery.of(context).size.height - 100,
+      height: MediaQuery.of(context).size.height - 250,
       padding: EdgeInsets.all(20.0),
       child: Column(
         children: [
@@ -47,91 +47,93 @@ class _LanguagesModalBottomSheetState extends State<LanguagesModalBottomSheet> {
           SizedBox(
             height: 30.0,
           ),
-          SingleChildScrollView(
-            child: Column(
-              spacing: 10.0,
-              children: [
-                LanguageSelection(
-                    value: 'Bahasa',
-                    groupValue: groupValue,
-                    onChanged: (value) {
-                      setState(() {
-                        groupValue = value!;
-                      });
-                    }),
-                LanguageSelection(
-                    value: 'Deutch',
-                    groupValue: groupValue,
-                    onChanged: (value) {
-                      setState(() {
-                        groupValue = value!;
-                      });
-                    }),
-                LanguageSelection(
-                    value: 'English',
-                    groupValue: groupValue,
-                    onChanged: (value) {
-                      setState(() {
-                        groupValue = value!;
-                      });
-                    }),
-                LanguageSelection(
-                    value: 'Espanol',
-                    groupValue: groupValue,
-                    onChanged: (value) {
-                      setState(() {
-                        groupValue = value!;
-                      });
-                    }),
-                LanguageSelection(
-                    value: 'Francaise',
-                    groupValue: groupValue,
-                    onChanged: (value) {
-                      setState(() {
-                        groupValue = value!;
-                      });
-                    }),
-                LanguageSelection(
-                    value: 'Italiano',
-                    groupValue: groupValue,
-                    onChanged: (value) {
-                      setState(() {
-                        groupValue = value!;
-                      });
-                    }),
-                LanguageSelection(
-                    value: 'Portugues',
-                    groupValue: groupValue,
-                    onChanged: (value) {
-                      setState(() {
-                        groupValue = value!;
-                      });
-                    }),
-                LanguageSelection(
-                    value: 'Pycckuu',
-                    groupValue: groupValue,
-                    onChanged: (value) {
-                      setState(() {
-                        groupValue = value!;
-                      });
-                    }),
-                LanguageSelection(
-                    value: 'Svenska',
-                    groupValue: groupValue,
-                    onChanged: (value) {
-                      setState(() {
-                        groupValue = value!;
-                      });
-                    }),
-                LanguageSelection(
-                    value: 'Turkce',
-                    groupValue: groupValue,
-                    onChanged: (value) {
-                      setState(() {
-                        groupValue = value!;
-                      });
-                    })
-              ],
+          Expanded(
+            child: SingleChildScrollView(
+              child: Column(
+                spacing: 10.0,
+                children: [
+                  LanguageSelection(
+                      value: 'Bahasa',
+                      groupValue: groupValue,
+                      onChanged: (value) {
+                        setState(() {
+                          groupValue = value!;
+                        });
+                      }),
+                  LanguageSelection(
+                      value: 'Deutch',
+                      groupValue: groupValue,
+                      onChanged: (value) {
+                        setState(() {
+                          groupValue = value!;
+                        });
+                      }),
+                  LanguageSelection(
+                      value: 'English',
+                      groupValue: groupValue,
+                      onChanged: (value) {
+                        setState(() {
+                          groupValue = value!;
+                        });
+                      }),
+                  LanguageSelection(
+                      value: 'Espanol',
+                      groupValue: groupValue,
+                      onChanged: (value) {
+                        setState(() {
+                          groupValue = value!;
+                        });
+                      }),
+                  LanguageSelection(
+                      value: 'Francaise',
+                      groupValue: groupValue,
+                      onChanged: (value) {
+                        setState(() {
+                          groupValue = value!;
+                        });
+                      }),
+                  LanguageSelection(
+                      value: 'Italiano',
+                      groupValue: groupValue,
+                      onChanged: (value) {
+                        setState(() {
+                          groupValue = value!;
+                        });
+                      }),
+                  LanguageSelection(
+                      value: 'Portugues',
+                      groupValue: groupValue,
+                      onChanged: (value) {
+                        setState(() {
+                          groupValue = value!;
+                        });
+                      }),
+                  LanguageSelection(
+                      value: 'Pycckuu',
+                      groupValue: groupValue,
+                      onChanged: (value) {
+                        setState(() {
+                          groupValue = value!;
+                        });
+                      }),
+                  LanguageSelection(
+                      value: 'Svenska',
+                      groupValue: groupValue,
+                      onChanged: (value) {
+                        setState(() {
+                          groupValue = value!;
+                        });
+                      }),
+                  LanguageSelection(
+                      value: 'Turkce',
+                      groupValue: groupValue,
+                      onChanged: (value) {
+                        setState(() {
+                          groupValue = value!;
+                        });
+                      })
+                ],
+              ),
             ),
           )
         ],
@@ -139,5 +141,3 @@ class _LanguagesModalBottomSheetState extends State<LanguagesModalBottomSheet> {
     );
   }
 }
-
-
